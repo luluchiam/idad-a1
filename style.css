@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Palette: soft pink theme */
+:root {
+  --bg-color: #fff0f5;
+  --accent-pink: #ffb3c6;
+  --deep-pink: #d63384;
+  --light-pink: #ffe2ec;
+  --text-color: #333;
+  --section-border: #f5c2d3;
+}
+
+/* Body styling */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+  padding: 2rem;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Headers */
+h1 {
+  font-size: 2.5rem;
+  color: var(--deep-pink);
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 0 #fdd;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--deep-pink);
+  margin-bottom: 1rem;
+  border-left: 6px solid var(--accent-pink);
+  padding-left: 0.6rem;
+  background-color: var(--light-pink);
+  padding: 0.6rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(255, 182, 193, 0.3);
+}
+
+h2:not(:first-of-type) {
+  margin-top: 3rem;
+}
+
+h2::before {
+  content: "✦ ";
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1.2rem;
+  background-color: white;
+  padding: 1rem;
+  border-left: 4px solid var(--section-border);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(255, 192, 203, 0.2);
+}
+
+/* Emphasized labels */
+strong {
+  color: var(--deep-pink);
+}
+
+/* Sections */
+.block {
+  margin-bottom: 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
